@@ -1,0 +1,18 @@
+<div id="app">
+
+    <button v-on:click="toggleModal">
+        Show Modal 
+    </button>
+
+    <modal v-show="showModal"
+    v-on:close="toggleModal"
+    v-bind:title="title">
+
+    <p slot="body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Minima quasi, similique atque repellat culpa, praesentium 
+        alias veniam dolorem quibusdam iusto consectetur accusamus 
+        nesciunt eaque harum assumenda, tempora quo pariatur mollitia.
+    </p>
+</modal>
+</div>
