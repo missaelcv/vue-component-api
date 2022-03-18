@@ -21,9 +21,16 @@ Vue.component('modal',{
                 </div>
                 </div>
                 </div>
-
-            
-
-    
     `
+})
+
+new Vue({
+    el:'#app',
+            data() {
+                return {
+                    title: 'El Titulo del model',
+                    showModal: false
+                }
+            },
+            
 })
